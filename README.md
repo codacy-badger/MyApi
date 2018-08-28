@@ -1,2 +1,2 @@
 # MyApi
-Creating simple API using C# .Net framework
+Creating simple API using C# .Net core

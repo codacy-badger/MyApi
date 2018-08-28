@@ -18,6 +18,9 @@ skip_tags: true
 image:
  - Visual Studio 2017
 
+init:
+- ps: $Env:LABEL = "CI" + $Env:APPVEYOR_BUILD_NUMBER.PadLeft(5, "0")
+
 #---------------------------------#
 #       build configuration       #
 #---------------------------------#

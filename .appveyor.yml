@@ -18,9 +18,6 @@ skip_tags: true
 image:
  - Visual Studio 2017
 
-init:
-- ps: $Env:LABEL = "CI" + $Env:APPVEYOR_BUILD_NUMBER.PadLeft(5, "0")
-
 #---------------------------------#
 #       build configuration       #
 #---------------------------------#
@@ -29,10 +26,6 @@ init:
 configuration:
  - Release
  - Debug
-
-# build platform, i.e. x86, x64, Any CPU. This setting is optional
-#platform:
-#  - x64
 
 before_build:
  - nuget restore
